@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="3" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_calendar_date_time_4" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="legal" sequence="0" value="legal"/>
+                <element inactive_on_update="false" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="What needed" mandatory="true" max_length="40" name="u_choice_5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="legal 1" sequence="0" value="legal 1"/>
+                <element inactive_on_update="false" label="legal 2" sequence="1" value="legal 2"/>
+                <element inactive_on_update="false" label="legal 3" sequence="2" value="legal 3"/>
+            </choice>
+        </element>
+    </element>
+</database>
